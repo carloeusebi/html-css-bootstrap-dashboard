@@ -46,7 +46,7 @@ main header{
 /* # MAIN */
 main{
     width: 100%;
-    background-color: wheat;
+    background-color: gray;
     overflow-y: auto;
 }
 
