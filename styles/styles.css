@@ -78,6 +78,7 @@ a{
 
 /* # SIDEBAR */
 #sidebar{
+    background-image: url(../img/sidebar-bg.png);
     background-color: var(--sidebar-bg-color);
     color: white;
     
