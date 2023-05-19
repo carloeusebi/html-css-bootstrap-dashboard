@@ -109,6 +109,34 @@ main{
     overflow-y: auto;
 }
 
+table .row-logo{
+    background-color: #f26551;
+    color: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+table tr{
+    display: flex;
+}
+
+table th,
+table td{
+    flex-basis: 125px;
+}
+
+table th:first-child,
+table td:first-child{
+    text-align: left;
+    flex-grow: 1;
+}
+
 /* ! MEDIA QUERIES */
 
 @media screen and (min-width: 992px) {
