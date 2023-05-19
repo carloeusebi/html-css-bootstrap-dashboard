@@ -1,17 +1,47 @@
 :root{
+    /* colors */
     --header-bg-color: #1b72e8;
     --sidebar-bg-color: #051e34;
+
+    /* dimentions */
+    --navbar-height: 100px;
+    --sidebar-sm-width: 75px;
+    --sidebar-lg-width: 250px;
+    --header-height: 100px;
 }
 
 /* ! MY UTILITIES */
 
 /* ! GENERALS */
+/* ? NAVBAR */
+#top-navbar{
+    height: var(--navbar-height);
+    
+}
 
 /* ! CONTENTS */
-/* # NAVBAR */
+#contents{
+    height: calc(100vh - var(--navbar-height));
+}
 
 /* # SIDEBAR */
+#sidebar{
+    background-color: var(--sidebar-bg-color);
+    
+    width: var(--sidebar-sm-width);
+    height: 100%;
+}
 
 /* # HEADER */
+main header{
+    background-color: var(--header-bg-color);    
+    height: var(--header-height);
+}
 
 /* # MAIN */
+main{
+    width: calc(100% - var(--sidebar-sm-width));
+    background-color: wheat;
+    overflow-y: auto;
+}
+
