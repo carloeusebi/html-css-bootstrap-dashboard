@@ -13,7 +13,6 @@
 /* ! MY UTILITIES */
 [class^="col"]{
     border: 1px dashed yellow;
-    height: 100%;
 }
 
 /* ! GENERALS */
@@ -30,9 +29,14 @@
 /* # SIDEBAR */
 #sidebar{
     background-color: var(--sidebar-bg-color);
+    color: white;
     
     width: var(--sidebar-sm-width);
     height: 100%;
+}
+
+#sidebar .col{
+    height: 25px;
 }
 
 /* # HEADER */
