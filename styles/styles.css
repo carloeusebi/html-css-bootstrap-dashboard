@@ -2,6 +2,8 @@
     /* colors */
     --header-bg-color: #1b72e8;
     --sidebar-bg-color: #051e34;
+    --searchbar-bg-color: #e5e5e5;
+    --notification-color: #ff8f00;
 
     /* dimentions */
     --navbar-height: 60px;
@@ -31,7 +33,7 @@
 }
 
 #top-navbar input[type="search"]{
-    background-color: #e5e5e5;
+    background-color: var(--searchbar-bg-color);
     color: black;
     border: 0;
 }
@@ -45,7 +47,24 @@
 }
 
 #top-navbar .input-group .btn{
-    background-color: #e5e5e5;
+    background-color: var(--searchbar-bg-color);
+}
+
+#notificationsButton{
+    background-color: transparent;
+    border: none;
+    color: var(--notification-color);
+}
+
+/* to hide the arrow */
+#notificationsButton::before{
+    display: none;
+}
+
+/* to better align dropdown menu */
+#notificationsButton ~ .dropdown-menu{
+    top: 100%;
+    right: 0;
 }
 
 /* ! CONTENTS */

@@ -21,28 +21,50 @@
     <!-- ! NAVBAR -->
     <nav id="top-navbar" class="navbar bg-body-tertiary">
         <div class="container-fluid justify-content-center p-1">
-          <a class="navbar-brand" href="#">
-            <img class="logo img-fluid d-none d-lg-block" src="img/logo.svg" alt="logo">
-            <img class="logo img-fluid d-lg-none" src="img/mobile-logo.png" alt="logo">
-          </a>
-          <form class="d-flex flex-grow-1" role="search">
-            <div class="input-group-append flex-grow-1">
-                <div class="input-group">
-                    <button class="btn btn-outline-secondary border-0" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                    <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+            
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img class="logo img-fluid d-none d-lg-block" src="img/logo.svg" alt="logo">
+                <img class="logo img-fluid d-lg-none" src="img/mobile-logo.png" alt="logo">
+            </a>
+
+            <!-- searchbar -->
+            <form action="http://marcolanci.it/lezioni/read_form.php" method="get" class="d-flex flex-grow-1" role="search">
+                <div class="input-group-append flex-grow-1">
+                    <div class="input-group">
+                        <button class="btn btn-outline-secondary border-0">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" name="serch-words">
+                    </div>
+                </div>            
+            </form>
+
+            <!-- icons -->
+            <div class="navbar-icons d-flex">
+                <div class="btn d-none d-lg-block">
+                    <i class="fa-solid fa-list-ul"></i>
                 </div>
-            </div>            
-          </form>
-          <div class="navbar-icons d-flex">
-            <div class="d-none d-lg-block">icon</div>
-            <div class="d-none d-lg-block">icon</div>
-            <div class="d-none d-lg-block">icon</div>
-            <div>icon</div>
-          </div>
+                <div class="btn d-none d-lg-block">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="btn d-none d-lg-block">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <!-- dropdown -->
+                <div class="dropdown dropstart">
+                    <button id="notificationsButton" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <!-- ! CONTETS -->
     <div id="contents" class="d-flex">
