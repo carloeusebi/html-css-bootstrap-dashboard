@@ -40,8 +40,15 @@ main header{
 
 /* # MAIN */
 main{
-    width: calc(100% - var(--sidebar-sm-width));
+    width: 100%;
     background-color: wheat;
     overflow-y: auto;
 }
 
+/* ! MEDIA QUERIES */
+
+@media screen and (min-width: 992px) {
+    #sidebar{
+        width: var(--sidebar-lg-width);
+    }
+}
