@@ -14,10 +14,6 @@
 /* ! MY UTILITIES */
 
 /* ! GENERALS */
-a{
-    text-decoration: none;
-}
-
 /* ? NAVBAR */
 #top-navbar{
     height: var(--navbar-height);
@@ -85,6 +81,10 @@ a{
 #sidebar span:first-child{
     display: inline-block;
     width: 25px
+}
+
+#sidebar a{
+    text-decoration: none;
 }
 
 /* # HEADER */
