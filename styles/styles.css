@@ -40,8 +40,8 @@
     color: black;
 }
 
-#top-navbar input[type="search"]::before{
-    content: 'ciao';
+#top-navbar input[type="search"]:focus{
+    box-shadow: none;
 }
 
 #top-navbar .input-group .btn{
