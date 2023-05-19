@@ -1,6 +1,6 @@
 :root{
     /* colors */
-    --header-bg-color: #1b72e8;
+    --main-bg-color: #f8f9fa;
     --sidebar-bg-color: #051e34;
     --searchbar-bg-color: #e5e5e5;
     --notification-color: #ff8f00;
@@ -9,13 +9,12 @@
     --navbar-height: 60px;
     --sidebar-sm-width: 50px;
     --sidebar-lg-width: 150px;
-    --header-height: 100px;
 }
 
 /* ! MY UTILITIES */
-[class^="col"]{
+/* [class^="col"]{
     border: 1px dashed yellow;
-}
+} */
 
 /* ! GENERALS */
 a{
@@ -25,7 +24,7 @@ a{
 /* ? NAVBAR */
 #top-navbar{
     height: var(--navbar-height);
-    background-color: #f8f9fa; 
+    background-color: var(--main-bg-color); 
 }
 
 #top-navbar > .container-fluid{
@@ -92,17 +91,24 @@ a{
 }
 
 /* # HEADER */
-main header{
-    background-color: var(--header-bg-color);    
-    color: white;
+header .btn.btn-primary{
+    line-height: 1.2;
+}
 
-    height: var(--header-height);    
+header .offcanvas{
+    width: 100vw !important;
+    transition: transform 500ms ease-in-out;
+}
+
+header .rounded-pill{
+    background-color: rgba(0,0,0,.25);
+    font-weight: bold;
 }
 
 /* # MAIN */
 main{
+    background-color: var(--main-bg-color);
     width: 100%;
-    background-color: gray;
     overflow-y: auto;
 }
 
@@ -111,5 +117,11 @@ main{
 @media screen and (min-width: 992px) {
     #sidebar{
         width: var(--sidebar-lg-width);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    header .offcanvas{
+        width: 50vw !important;
     }
 }

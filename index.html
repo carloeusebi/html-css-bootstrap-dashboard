@@ -10,6 +10,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'>
     <!-- bootstrap -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'>
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- styles.css -->
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
 </head>
@@ -21,7 +23,7 @@
     <!-- ! NAVBAR -->
     <nav id="top-navbar" class="navbar bg-body-tertiary">
         <div class="container-fluid justify-content-center p-1">
-            
+
             <!-- logo -->
             <a class="navbar-brand" href="#">
                 <img class="logo img-fluid d-none d-lg-block" src="img/logo.svg" alt="logo">
@@ -37,7 +39,7 @@
                         </button>
                         <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" name="serch-words">
                     </div>
-                </div>            
+                </div>
             </form>
 
             <!-- icons -->
@@ -68,9 +70,9 @@
 
     <!-- ! CONTETS -->
     <div id="contents" class="d-flex">
-        
+
             <!-- ! SIDEBAR -->
-            <div id="sidebar">                
+            <div id="sidebar">
                     <div class="d-flex flex-column align-items-center align-items-lg-start h-100 p-4">
                         <!-- home -->
                         <a href="#" class="flex-grow-0 text-white mb-3">
@@ -84,7 +86,7 @@
                             <span>
                                 <i class="fa-solid fa-chart-simple"></i>
                             </span>
-                            <span class="d-none d-lg-inline">Stats</span>                            
+                            <span class="d-none d-lg-inline">Stats</span>
                         </a>
                         <!-- signal -->
                         <a href="#" class="flex-grow-0 text-white mb-3">
@@ -109,12 +111,45 @@
             <main>
 
                 <!-- ! HEADER -->
-                <header>
+                <header class="bg-primary text-white p-3">
                     <div class="container-fluid">
-                        <div class="row row-cols-1 row-cols-md-3">
-                            <div class="col order-md-1">nuovo studente</div>
-                            <div class="col">boolean</div>
-                            <div class="col">studenti online</div>
+                        <div class="row">
+                            <!-- add student -->
+                            <div class="col-12 col-md-3 order-md-1 text-lg-end">
+                                Nuovo Studente
+                                <button class="btn btn-primary border-white ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                                        Offcanvas right
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body text-black text-center">
+                                        <div>ADD FORM HERE</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- boolean -->
+                            <div class="col-12 col-md-6">
+                                <div class="top-row">
+                                    <span class="h1">Boolean</span>
+                                    <span class="badge rounded-pill">Piano blaze</span>
+                                </div>
+                                <div class="bottom-row">
+                                    <span class="badge rounded-pill">3 app</span>
+                                    <span><i class="bi bi-chevron-double-right"></i></span>
+                                    <span class="badge rounded-pill d-lg-none">+</span>
+                                    <span class="badge rounded-pill d-none d-lg-inline-block">Boolean mobile app</span>
+                                    <span class="badge rounded-pill d-none d-lg-inline-block">Boolean web app</span>
+                                    <span class="badge rounded-pill d-none d-lg-inline-block">Boolean blog app</span>
+                                </div>
+                            </div>
+                            <!-- online students -->
+                            <div class="col-12 col-md-3">
+                                <div>Studenti online negli ultimi 30 minuti</div>
+                                <div class="fs-1">125</div>
+                            </div>
                         </div>
                     </div>
                 </header>
