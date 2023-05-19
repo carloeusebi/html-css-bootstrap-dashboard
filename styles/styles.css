@@ -4,7 +4,7 @@
     --sidebar-bg-color: #051e34;
 
     /* dimentions */
-    --navbar-height: 100px;
+    --navbar-height: 60px;
     --sidebar-sm-width: 75px;
     --sidebar-lg-width: 250px;
     --header-height: 100px;
@@ -18,7 +18,34 @@
 /* ! GENERALS */
 /* ? NAVBAR */
 #top-navbar{
-    height: var(--navbar-height);    
+    height: var(--navbar-height);
+    background-color: #f8f9fa; 
+}
+
+#top-navbar > .container-fluid{
+    background-color: white;
+}
+
+#top-navbar .logo{
+    max-height: 40px;
+}
+
+#top-navbar input[type="search"]{
+    background-color: #e5e5e5;
+    color: black;
+    border: 0;
+}
+
+#top-navbar input[type="search"]::placeholder{
+    color: black;
+}
+
+#top-navbar input[type="search"]::before{
+    content: 'ciao';
+}
+
+#top-navbar .input-group .btn{
+    background-color: #e5e5e5;
 }
 
 /* ! CONTENTS */
