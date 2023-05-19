@@ -11,12 +11,15 @@
 }
 
 /* ! MY UTILITIES */
+[class^="col"]{
+    border: 1px dashed yellow;
+    height: 100%;
+}
 
 /* ! GENERALS */
 /* ? NAVBAR */
 #top-navbar{
-    height: var(--navbar-height);
-    
+    height: var(--navbar-height);    
 }
 
 /* ! CONTENTS */
@@ -35,7 +38,9 @@
 /* # HEADER */
 main header{
     background-color: var(--header-bg-color);    
-    height: var(--header-height);
+    color: white;
+
+    height: var(--header-height);    
 }
 
 /* # MAIN */
