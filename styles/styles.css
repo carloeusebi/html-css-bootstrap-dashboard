@@ -11,15 +11,13 @@
     --sidebar-lg-width: 175px;
 }
 
-/* ! MY UTILITIES */
-
-/* ! GENERALS */
-/* ? NAVBAR */
+/* ! NAVBAR */
 #top-navbar{
     height: var(--navbar-height);
     background-color: var(--main-bg-color); 
 }
 
+/* as in screenshot, navbar has two colors */
 #top-navbar > .container-fluid{
     background-color: white;
 }
@@ -77,8 +75,8 @@
     height: 100%;
 }
 
-#sidebar span:first-child{
-    display: inline-block;
+/* sidebar icons are not the same width, forcing a width aligns the descriptions */
+#sidebar .fa-solid{
     width: 25px
 }
 
