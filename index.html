@@ -26,8 +26,8 @@
     CARLO EUSEBI -->
 
   <!-- ! NAVBAR -->
-  <nav id="top-navbar" class="navbar bg-body-tertiary">
-    <div class="container-fluid justify-content-center flex-nowrap p-2">
+  <nav id="top-navbar" class="navbar bg-body-tertiary py-2">
+    <div class="container-fluid justify-content-center flex-nowrap">
       <!-- logo -->
       <a class="navbar-brand" href="#">
         <img class="logo img-fluid d-none d-lg-block" src="img/logo.svg" alt="logo">
@@ -42,7 +42,7 @@
               <i class="fa fa-search"></i>
             </button>
             <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
-              aria-label="Search" name="serch-words">
+              aria-label="Search" name="search-words">
           </div>
         </div>
       </form>
@@ -131,12 +131,14 @@
               Nuovo Studente
               <button class="btn btn-outline-light fs-5 ms-3" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+              <!-- # FORM -->
               <div class="offcanvas offcanvas-end text-black text-start" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <!-- * FORM BODY -->
                 <div class="offcanvas-body">
                   <div>
                     <div class="container-fluid">
@@ -231,13 +233,14 @@
       <div class="container-fluid">
         <div class="row mb-4">
           <div class="col-12 col-lg-8">
-            <!-- TABELLA -->
-            <div class="card mt-4">
+            <!-- TABLE -->
+            <div id="table" class="card mt-4">
               <div class="card-header">
                 <h5 class="card-title">Prossime classi</h5>
               </div>
               <div class="card-body">
-                <table class="table text-center">
+                <table class="table table-hover text-center ">
+                  <!-- * table head -->
                   <thead>
                     <tr>
                       <th scope="col">Nome</th>
@@ -247,6 +250,7 @@
                       <th scope="col">Azioni</th>
                     </tr>
                   </thead>
+                  <!-- * table body -->
                   <tbody>
                     <tr>
                       <td>
@@ -267,7 +271,6 @@
                         </button>
                       </td>
                     </tr>
-
                     <tr>
                       <td>
                         <img class="img-fluid" src="img/class-avatar.jpg" alt="img">
@@ -413,7 +416,7 @@
             </div>
 
             <!-- FAQ -->
-            <div class="card mt-4">
+            <div id="faq" class="card mt-4">
               <div class="card-header">
                 <h5 class="card-title">F.A.Q.</h5>
               </div>
@@ -464,7 +467,7 @@
 
           <div class="col-12 col-lg-4">
             <!-- TO DO -->
-            <div class="card mt-4">
+            <div id="todo" class="card mt-4">
               <div class="card-header">
                 <h5 class="card-title">Todo</h5>
               </div>
@@ -472,17 +475,17 @@
                 <form action="http://marcolanci.it/lezioni/read_form.php" method="post">
                   <ul class="list-group">
                     <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" name="todoList[]" value="kickoff"
+                      <input class="form-check-input" type="checkbox" name="todoList[]" value="kickoff"
                         id="firstCheckbox">
                       <label class="form-check-label" for="firstCheckbox">Kickoff nuvoe classi</label>
                     </li>
                     <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" name="todoList[]" value="lezione"
+                      <input class="form-check-input" type="checkbox" name="todoList[]" value="lezione"
                         id="secondCheckbox">
                       <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
                     </li>
                     <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" name="todoList[]" value="githubUsernames"
+                      <input class="form-check-input" type="checkbox" name="todoList[]" value="githubUsernames"
                         id="thirdCheckbox">
                       <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
                     </li>
@@ -493,7 +496,7 @@
             </div>
 
             <!-- STATISTICHE -->
-            <div class="card mt-4">
+            <div id="stats" class="card mt-4">
               <div class="card-body">
                 <div class="card">
                   <img src="img/stats.jpeg" class="card-img-top" alt="...">
