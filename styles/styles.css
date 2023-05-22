@@ -92,8 +92,8 @@
 }
 
 /* # HEADER */
-header .offcanvas{
-    width: 100vw !important;
+header .offcanvas.offcanvas-end{
+    width: 100vw;
     transition: transform 500ms ease-in-out;
 }
 
@@ -138,7 +138,7 @@ table .img-fluid{
 }
 
 @media screen and (min-width: 1200px){
-    header .offcanvas{
-        width: 50vw !important;
+    header .offcanvas.offcanvas-end{
+        width: 50vw;
     }
 }
