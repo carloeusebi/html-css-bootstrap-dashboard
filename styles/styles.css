@@ -105,13 +105,9 @@ header .rounded-pill{
 /* # MAIN */
 main{
     background-color: var(--main-bg-color);
-    width: 100%;
+    width: calc(100vw - var(--sidebar-sm-width));
     overflow-y: auto;
 }
-
-/* table tr{
-    display: flex;
-} */
 
 table th:not(:first-child),
 table td:not(:first-child){
@@ -123,12 +119,6 @@ table td:first-child{
     text-align: left;
 }
 
-/* table th:first-child,
-table td:first-child{
-    text-align: left;
-    flex-grow: 1;
-} */
-
 table .img-fluid{
     width: 35px;
     border-radius: 50%;
@@ -139,6 +129,10 @@ table .img-fluid{
 @media screen and (min-width: 992px) {
     #sidebar{
         width: var(--sidebar-lg-width);
+    }
+
+    main{
+        width: calc(100vw - var(--sidebar-lg-width));
     }
 }
 
