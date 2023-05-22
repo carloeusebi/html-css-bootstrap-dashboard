@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -153,34 +153,82 @@
               <!-- add student -->
               <div class="col-12 col-md-3 order-md-1 text-lg-end">
                 Nuovo Studente
-                <button
-                  class="btn btn-outline-light fs-5 ms-3"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight"
-                >
-                  +
-                </button>
-                <div
-                  class="offcanvas offcanvas-end"
-                  tabindex="-1"
-                  id="offcanvasRight"
-                  aria-labelledby="offcanvasRightLabel"
-                >
+                <button class="btn btn-outline-light fs-5 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                <div class="offcanvas offcanvas-end text-black text-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                      Offcanvas right
-                    </h5>
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                     <button
                       type="button"
                       class="btn-close"
-                      data-bs-dismiss="offcanvas"
+                      data-bs-dismiss="offcanvas" 
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body text-black text-center">
-                    <div>ADD FORM HERE</div>
+                  <div class="offcanvas-body">
+                    <div>
+                      <div class="container-fluid">
+                        <form class="row g-3" action="http://marcolanci.it/lezioni/read_form.php" method="post">
+                          <div class="col-12 col-md-6">
+                            <label for="fname" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="fname" name="fname" required>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label for="lname" class="form-label">Cognome</label>
+                            <input type="text" class="form-control" id="lname" name="lname" required>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
+                              <div class="input-group-text">@</div>
+                              <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                          </div>
+                          <div class="col-12">
+                            <label for="address" class="form-label">Indirizzo</label>
+                            <input type="text" class="form-control" id="addres" name="address">
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" name="city">
+                          </div>
+                          <div class="col-12 col-md-4">
+                            <label for="country" class="form-label">Stato</label>
+                            <select id="country" class="form-select" name="country">
+                              <option selected disabled>Scegli</option>
+                              <option>Italia</option>
+                              <option>Francia</option>
+                              <option>Spagna</option>
+                              <option>Germania</option>
+                              <option>Regno Unito</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-2">
+                            <label for="cap" class="form-label">CAP</label>
+                            <input type="text" class="form-control" id="cap" name="cap" maxlength="5" minlength="5">
+                          </div>
+                          <div class="col-12">
+                            <label for="picture" class="form-label">Email</label>
+                            <input type="file" class="form-control" id="picture" name="picture">
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="select" name="selected" required>
+                              <label class="form-check-label" for="select">
+                                Seleziona per proseguire
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Salva</button>
+                            <button type="reset" class="btn btn-warning">Svuota</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
