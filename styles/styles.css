@@ -109,20 +109,25 @@ main{
     overflow-y: auto;
 }
 
-table tr{
+/* table tr{
     display: flex;
-}
+} */
 
-table th,
-table td{
-    flex-basis: 125px;
+table th:not(:first-child),
+table td:not(:first-child){
+    width: 125px;
 }
 
 table th:first-child,
 table td:first-child{
     text-align: left;
-    flex-grow: 1;
 }
+
+/* table th:first-child,
+table td:first-child{
+    text-align: left;
+    flex-grow: 1;
+} */
 
 table .img-fluid{
     width: 35px;
