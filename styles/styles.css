@@ -71,7 +71,7 @@
     background-color: var(--sidebar-bg-color);
     color: white;
     
-    width: var(--sidebar-sm-width);
+    flex: 0 0 var(--sidebar-sm-width);
     height: 100%;
 }
 
@@ -102,7 +102,7 @@ header .rounded-pill{
 /* # MAIN */
 main{
     background-color: var(--main-bg-color);
-    width: calc(100vw - var(--sidebar-sm-width));
+    flex-grow: 1;
     overflow-y: auto;
 }
 
@@ -130,11 +130,7 @@ table td:first-child{
 
 @media screen and (min-width: 992px) {
     #sidebar{
-        width: var(--sidebar-lg-width);
-    }
-
-    main{
-        width: calc(100vw - var(--sidebar-lg-width));
+        flex-basis: var(--sidebar-lg-width);
     }
 }
 
